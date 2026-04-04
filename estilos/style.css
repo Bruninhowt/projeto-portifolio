@@ -127,7 +127,6 @@ article#video .video-conteiner{
   width: 100%;
   margin: auto;
   aspect-ratio: 16/9;
-  border: 5px solid red;
 }
 
 .video-conteiner iframe{
@@ -174,14 +173,36 @@ article#video .video-conteiner{
   border-radius: 4px;
 }
 
-article#formacao{
+#formacao-conteiner{
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
 }
 
-article#formacao  .ano{
+#formacao-conteiner h3{
   color: var(--destaque);
+  font-size: 1.3em;
+}
+
+#formacao-conteiner p{
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+#formacao-conteiner .curso{
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 8px solid var(--destaque-inverso);
+
+  transition: border 0.5s, color 0.5s;
+}
+
+#formacao-conteiner .curso:hover{
+  border-left: 15px solid var(--destaque);
+}
+
+#projeto > .projeto-conteiner{
+  display: flex;
 }
 
 @media screen and (min-width:760px){
